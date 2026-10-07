@@ -1,0 +1,123 @@
+/* Global styles */
+:root {
+    --navy: #123456;
+    --gold: #d4af37;
+    --ivory: #f8f5f0;
+    --dark: #1f2a37;
+    --white: #ffffff;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --heading-font: Georgia, 'Times New Roman', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--dark);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--navy);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+nav a:hover {
+    background: var(--gold);
+    color: var(--navy);
+    border-color: var(--gold);
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Content card styles */
+.card {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(18, 52, 86, 0.08);
+}
+
+h1,
+h2 {
+    color: var(--navy);
+    font-family: var(--heading-font);
+}
+
+p,
+li,
+label {
+    color: var(--dark);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+/* Form styles */
+input,
+textarea,
+button {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+    font-family: var(--body-font);
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    background: var(--navy);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+footer {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
